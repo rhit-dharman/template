@@ -27,20 +27,17 @@ body {
 }
 
 #rosefire-button-container {
-    width: 216px;
+    width: 200px;
+}
+
+#rosefire-button {
+    background-color: #800000;
+    width: 200px;
 }
 
 #rosefire-button:active {
     transform: translateY(4px);
     opacity: 0.8;
-}
-
-#rosefire-button-text {
-    position: absolute;
-    color: white;
-    width: 216px;
-    text-align: center;
-    line-height: 52px;
 }
 
 .fab {

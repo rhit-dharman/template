@@ -24,6 +24,8 @@ rh.appname.ClassName.prototype.methodName = function (argsIfNeeded) {
 };
 
 rh.appname.sharedInit = function () {
+    return; // Remove this line once you are doing Firebase auth
+
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             console.log("Signed in with Firebase uid", user.uid);
@@ -49,6 +51,10 @@ rh.appname.loginPageInit = function () {
     console.log("Set on click for Rosefire button");
     $("#rosefire-button").click(function () {
         console.log("Rosefire login");
+
+        return; // Remove this line once you have a REGISTRY_TOKEN
+
+
         const REGISTRY_TOKEN = "GetYourOwnRegistryToken"
         Rosefire.signIn(REGISTRY_TOKEN, function (err, rfUser) {
             if (err) {
@@ -69,6 +75,6 @@ rh.appname.loginPageInit = function () {
 
 /* Main */
 $(document).ready(function () {
-    rh.rpss.sharedInit();
-    rh.rpss.loginPageInit();
+    rh.appname.sharedInit();
+    rh.appname.loginPageInit();
 });
