@@ -8,19 +8,23 @@
 /** namespace. */
 var rh = rh || {};
 rh.appname = rh.appname || {};
+
 /** globals */
 rh.appname.variableName = "";
 
+/** function and class syntax examples */
 rh.appname.functionName = function () {
 	/** function body */
 };
 
-rh.appname.ClassName = function () {
+rh.appname.ClassName = class {
 	/** constructor */
-};
+	constructor() {
 
-rh.appname.ClassName.prototype.methodName = function (argsIfNeeded) {
-	/** class method */
+	}
+	methodName() {
+
+	}
 };
 
 rh.appname.sharedInit = function () {
@@ -71,7 +75,6 @@ rh.appname.loginPageInit = function () {
         });
     });
 };
-
 
 /* Main */
 $(document).ready(function () {

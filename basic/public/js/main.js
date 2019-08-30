@@ -12,23 +12,24 @@ rh.appname = rh.appname || {};
 /** globals */
 rh.appname.variableName = "";
 
+/** function and class syntax examples */
 rh.appname.functionName = function () {
 	/** function body */
 };
 
-rh.appname.ClassName = function () {
+rh.appname.ClassName = class {
 	/** constructor */
-};
+	constructor() {
 
-rh.appname.ClassName.prototype.methodName = function (argsIfNeeded) {
-	/** class method */
+	}
+	methodName() {
+
+	}
 };
 
 rh.appname.sharedInit = function () {
     console.log("TODO: Initialize click listeners, etc.");
 };
-
-
 
 /* Main */
 $(document).ready(function () {
