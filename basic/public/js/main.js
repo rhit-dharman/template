@@ -7,17 +7,16 @@
 
 /** namespace. */
 var rh = rh || {};
-rh.appname = rh.appname || {};
 
 /** globals */
-rh.appname.variableName = "";
+rh.variableName = "";
 
 /** function and class syntax examples */
-rh.appname.functionName = function () {
+rh.functionName = function () {
 	/** function body */
 };
 
-rh.appname.ClassName = class {
+rh.ClassName = class {
 	/** constructor */
 	constructor() {
 
@@ -27,11 +26,7 @@ rh.appname.ClassName = class {
 	}
 };
 
-rh.appname.sharedInit = function () {
-    console.log("TODO: Initialize click listeners, etc.");
-};
-
 /* Main */
-$(document).ready(function () {
-    rh.appname.sharedInit();
+$(document).ready(() => {
+    console.log("Ready");
 });

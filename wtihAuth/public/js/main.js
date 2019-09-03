@@ -7,17 +7,16 @@
 
 /** namespace. */
 var rh = rh || {};
-rh.appname = rh.appname || {};
 
 /** globals */
-rh.appname.variableName = "";
+rh.variableName = "";
 
 /** function and class syntax examples */
-rh.appname.functionName = function () {
+rh.functionName = function () {
 	/** function body */
 };
 
-rh.appname.ClassName = class {
+rh.ClassName = class {
 	/** constructor */
 	constructor() {
 
@@ -27,14 +26,14 @@ rh.appname.ClassName = class {
 	}
 };
 
-rh.appname.sharedInit = function () {
+rh.sharedInit = function () {
     return; // Remove this line once you are doing Firebase auth
 
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             console.log("Signed in with Firebase uid", user.uid);
             if ($('#name-of-page').length) {
-                rh.appname.nameOfPageInit();
+                rh.nameOfPageInit();
             }
         } else {
             console.log("No user is signed in.");
@@ -51,7 +50,7 @@ rh.appname.sharedInit = function () {
 };
 
 // Login Page
-rh.appname.loginPageInit = function () {
+rh.loginPageInit = function () {
     console.log("Set on click for Rosefire button");
     $("#rosefire-button").click(function () {
         console.log("Rosefire login");
@@ -77,7 +76,9 @@ rh.appname.loginPageInit = function () {
 };
 
 /* Main */
-$(document).ready(function () {
-    rh.appname.sharedInit();
-    rh.appname.loginPageInit();
+$(document).ready(() => {
+    rh.sharedInit();
+    if ($('#login-page').length) {
+        rh.loginPageInit();
+    }
 });
