@@ -24,7 +24,7 @@ rh.ClassName = class {
 	methodName() {
 
 	}
-};
+}
 
 /* Main */
 $(document).ready(() => {

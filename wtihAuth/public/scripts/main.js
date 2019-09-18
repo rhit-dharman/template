@@ -24,7 +24,7 @@ rh.ClassName = class {
 	methodName() {
 
 	}
-};
+}
 
 rh.sharedInit = function () {
     return; // Remove this line once you are doing Firebase auth
