@@ -1,32 +1,36 @@
 /**
  * @fileoverview
- * Provides interactions for all pages in the UI.
+ * Provides the JavaScript interactions for all pages.
  *
  * @author 
+ * PUT_YOUR_NAME_HERE
  */
 
 /** namespace. */
-var rh = rh || {};
+var rhit = rhit || {};
 
 /** globals */
-rh.variableName = "";
+rhit.variableName = "";
 
 /** function and class syntax examples */
-rh.functionName = function () {
+rhit.functionName = function () {
 	/** function body */
 };
 
-rh.ClassName = class {
-	/** constructor */
+rhit.ClassName = class {
 	constructor() {
 
 	}
+
 	methodName() {
 
 	}
 }
 
 /* Main */
-$(document).ready(() => {
-    console.log("Ready");
-});
+/** function and class syntax examples */
+rhit.main = function () {
+	console.log("Ready");
+};
+
+rhit.main();
