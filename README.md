@@ -1,2 +1,2 @@
 # template
-Bootstrap, jQuery, Firebase template
+Bootstrap Material Design, jQuery, and Firebase template
