@@ -3,34 +3,27 @@
  * Provides the JavaScript interactions for all pages.
  *
  * @author 
- * PUT_YOUR_NAME_HERE
+ * Nikhil Dharmavaram
  */
 
-/** namespace. */
-var rhit = rhit || {};
 
-/** globals */
-rhit.variableName = "";
+rhit.counter = 0;
 
-/** function and class syntax examples */
-rhit.functionName = function () {
-	/** function body */
+
+rhit.updateCounter = function () {
+
 };
 
-rhit.ClassName = class {
-	constructor() {
 
-	}
-
-	methodName() {
-
-	}
-}
-
-/* Main */
-/** function and class syntax examples */
 rhit.main = function () {
 	console.log("Ready");
+	const buttons = document.querySelectorAll("#counterButtons button");
+	buttons.forEach((button) => {
+		button.onclick = (event) => {
+			const dataAmount = button.dataset.amount;
+			const dataIsMultiplication = button.dataset.isMultiplication;
+			console.log(`Amount: ${dataAmount} isMult: ${dataIsMultiplication}`);
+	});
 };
 
 rhit.main();
